@@ -1,0 +1,84 @@
+$color-1: #ff0092;
+$bgcolor: #fcfafa;
+$bordercolor: #5aaa95;
+$textcolor: #003049;
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    size: 100%;
+    background-color: $bgcolor;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin: 10px;
+    height: 97vh;
+    display: grid;
+    grid-row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 5px outset $bordercolor;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    padding: 15px;
+    padding-top: 40px;
+    
+    .logo {
+        height: 150px;
+    }
+}
+
+section {
+    padding: 20px;
+    padding-bottom: 35px;
+    padding-top: 5px;
+    display: grid;
+    grid-row-gap: 5px;
+}
+
+main {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-row-gap: 20px;
+    text-align: left;
+}
+
+footer {
+    padding: 20px;
+    font-size: 25px;
+    display: grid;
+    grid-template-columns: repeat(6, 16%);
+    margin-bottom: 5%;
+}
+
+a {
+    color: $textcolor;
+}
+
+h1 {
+    color: $textcolor;
+    font-size: 48px;
+}
+
+h2 {
+    color: $textcolor;
+    font-size: 35px;
+}
+
+h3 {
+    color: $textcolor;
+    font-size: 20px;
+}
+
+p {
+    color: $textcolor;
+}
